@@ -26,6 +26,7 @@ function removeDuplicates() {
 : 배열의 모든 요소를 연결해 하나의 문자열로 만듦
 - .push()
 : 배열의 끝에 하나 이상의 요소를 추가하고, 배열의 새로운 길이를 반환함.
+- for (var i in data) : 객체의 key값에 접근이 가능하나, value값을 접근할 수는 없다. cf) for of : Symbol.iterator 
 ### Apps script
 - .getRange(row, column, numRows, numColumns) 
 : Returns the range with the top left cell at the given coordinates with the given number of rows and columns.
