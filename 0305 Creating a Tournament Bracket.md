@@ -124,4 +124,19 @@ function setConnector_(sheet, rng) {
   - 현재 코드의 numRows = 1000 - 2 + 1 = 999
   - cf) excel의 offset 함수 -> ref를 기준으로 떨어진 행의 정도 / ref를 기준으로 떨어진 열의 정도 / 높이 / 너비
   - 'FirstPlayer' Range가 ref => 0,0만큼 떨어짐 = FirstPlayer의 Range 그대로 + 999개 행, 1개의 열 선택
+  - players = rangePlayers.getValues() <- 현재 players.length = 999 -> 2차원 배열로 들어가있음~!~!
+- .getRange(row, column) : Returns the range with the top left cell at the given coordinates.
+  - The row index of the cell to return; row indexing starts with 1.
+  - The column index of the cell to return; column indexing starts with 1.
   
+### Javascript
+- .slice() : slice() 메서드는 어떤 배열의 begin부터 end까지(end 미포함)에 대한 얕은 복사본을 새로운 배열 객체로 반환합니다. 원본 배열은 바뀌지 않습니다.
+- Math.random() : 0 <= x < 1의 난수 발생
+- .splice() : splice() 메서드는 배열의 기존 요소를 삭제 또는 교체하거나 새 요소를 추가하여 배열의 내용을 변경합니다.
+  - rng.setValue(players.splice(rand - 1, 1)[0][0] --> 배열에서 rand-1의 인덱스를 삭제하는 동시에, 삭제되는 요소 배열로 반환. [0][0]은 삭제된 요소의 [0]의 [0]
+
+### 기타
+- None의 반대는 true
+  - !players[i][0] = true
+- if(players)
+  - if문 내에 있는게 None이 아니면 pass !!
